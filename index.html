@@ -12,33 +12,12 @@
     <link rel="stylesheet" href="styles.css">
     <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" />
+    <script src="script.js"></script>
 </head>
 
 <body>
-    <!-- BACKGROUND BLUR -->
-    <div class="gradient-bg"></div>
-    <nav class="navbar">
-        <div class="logo">
-            <a href="#hero">Home</a>
-        </div>
-        <div class="nav-right">
-            <ul class="nav-links">
-                <li><a href="#about"><i data-lucide="user"></i>About</a></li>
-                <li><a href="#education"><i data-lucide="graduation-cap"></i>Education</a></li>
-                <li><a href="#work"><i data-lucide="briefcase"></i>Work</a></li>
-                <li><a href="#projects"><i data-lucide="folder-kanban"></i>Projects</a></li>
-                <li><a href="#skills"><i data-lucide="brain-circuit"></i>Skills</a></li>
-                <li><a href="#papers"><i data-lucide="file-text"></i>Documentation</a></li>
-                <li><a href="#awards"><i data-lucide="trophy"></i>Achievements</a></li>
-                <li><a href="#contact"><i data-lucide="mail"></i>Contact</a></li>
-            </ul>
-            <a href="assets/pdfs/resume.pdf" class="resume-btn" download>
-                <i data-lucide="download"></i>
-                Resume
-            </a>
-        </div>
-    </nav>
     <!-- NAVBAR -->
+    <div id="navbar-container"></div>
     <header>
         <!-- HERO -->
         <section class="hero" id="hero">
@@ -400,7 +379,6 @@
                         Akka • Java • Actor Model
                     </div>
                 </a>
-
                 <a href="projects/image-classification.html" class="project-card">
                     <h3>Image Classification Using CNNs</h3>
                     <p>
@@ -424,35 +402,27 @@
                     </div>
                 </a>
                 <a href="projects/multi-label.html" class="project-card">
-
                     <h3>Multi-label Emotion Detection</h3>
-
                     <p>
                         Designed a deep learning based multi-label emotion classification system
                         for detecting multiple emotional states from text snippets
                         using neural network architectures and NLP workflows.
                     </p>
-
                     <div class="tech-stack">
                         Python • PyTorch • NLP • Neural Networks
                     </div>
-
                 </a>
                 <a href="projects/price-predictor.html" class="project-card">
-
                     <h3>Used Automobile Price Prediction</h3>
-
                     <p>
                         Designed a price predictor model that estimates the price of automobile
                         using real world vehicle listing datasets.
                         The system predicted prices based on specifications,
                         fuel information...
                     </p>
-
                     <div class="tech-stack">
                         Python • Scikit-learn • Random Forest • Data Preprocessing
                     </div>
-
                 </a>
             </div>
     </section>
@@ -475,7 +445,6 @@
                 <h3>AI & ML</h3>
                 <p>LLMs, RAG, NLP, Deep Learning, XAI, PyTorch, Neural Network</p>
             </div>
-
             <div class="skill-card">
                 <h3>Databases</h3>
                 <p>SQL, PostgreSQL, Neo4j, Redis, Mongodb</p>
@@ -485,11 +454,9 @@
                 <p>Plotly, Matplotlib, Seaborn</p>
             </div>
             <div class="skill-card">
-                <h3>Visualization</h3>
+                <h3>Tools & Platforms</h3>
                 <p>Git, GitHub, Docker, LaTeX</p>
             </div>
-
-
         </div>
     </section>
     <!-- PROJECTS  DOCS-->
@@ -540,7 +507,7 @@
     <!-- EDU -->
     <section class="section" id="awards">
         <div class="section-title">
-            <p> Honours</p>
+            <p> HONOURS</p>
             <h2>Achievements & Awards</h2>
         </div>
         <div class="timeline">
@@ -573,7 +540,7 @@
                     </div>
                     <div class="timeline-meta">
                         <span class="timeline-date">
-                            April 2014
+                            Apr. 2014
                         </span>
                     </div>
                 </div>
@@ -604,7 +571,7 @@
                         </div>
                         <div>
                             <h4>Email</h4>
-                            <p>gupta_ram01œhotmail.com</p>
+                            <p>gupta_ram01@hotmail.com</p>
                         </div>
                     </a>
                     <a href="https://github.com/Guptaram001" target="_blank" class="contact-item">
@@ -631,14 +598,16 @@
             <div class="contact-card glass-card">
                 <h3>Research Interests</h3>
                 <div class="interest-tags">
-                    <span>Explainable AI</span>
-                    <span>Knowledge Graphs</span>
+                    <span>AI/ML</span>
+                    <span>NLP</span>
                     <span>RAG Systems</span>
                     <span>Distributed Systems</span>
-                    <span>Multilingual NLP</span>
-                    <span>LLMs</span>
+                    <span>Database</span>
                     <span>Data Engineering</span>
-                    <span>Machine Learning</span>
+                    <span>Software Engineering</span>
+                    <span>Deep Learning</span>
+                    <span>LLMs</span>
+                    <span>Network Security</span>
                 </div>
                 <div class="availability">
                     <div class="status-dot"></div>
@@ -651,11 +620,7 @@
         </div>
     </section>
     <footer>
-        <p>© Mine Portforlio </p>
     </footer>
-    <script>
-        lucide.createIcons();
-    </script>
 </body>
 
 </html>

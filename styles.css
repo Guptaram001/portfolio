@@ -39,7 +39,7 @@ header {
   backdrop-filter: blur(16px);
   background: rgba(2, 6, 23, 0.72);
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
-  z-index: 9999;
+  z-index: 1000;
 }
 
 .nav-links {
@@ -55,14 +55,7 @@ header {
 .nav-links a:hover {
   color: white;
 }
-.hero {
-  display: grid;
-  grid-template-columns: 1.5fr 1fr;
-  gap: 4rem;
-  align-items: center;
-  min-height: 85vh;
-  padding-top: 2rem;
-}
+
 .tagline {
   color: var(--secondary);
   font-weight: 700;
@@ -629,4 +622,70 @@ footer {
 .glass-card a {
   text-decoration: none;
   color: white;
+}
+
+/* Hamburger menu */
+.hamburger {
+  display: none;
+  flex-direction: column;
+  cursor: pointer;
+  gap: 4px;
+}
+
+.hamburger span {
+  height: 3px;
+  width: 25px;
+  background: #fff;
+  border-radius: 2px;
+}
+
+/* Hide nav-links on mobile initially */
+@media (max-width: 768px) {
+  .hamburger {
+    display: flex;
+  }
+
+  .nav-right {
+    position: absolute;
+    top: 100%;
+    left: 0;
+    width: 100%;
+    background: rgba(2, 6, 23, 0.95);
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem 0;
+  }
+
+  .nav-right.active {
+    display: flex;
+  }
+
+  .nav-links {
+    flex-direction: column;
+    gap: 1rem;
+  }
+
+  .resume-btn {
+    margin-top: 1rem;
+  }
+}
+
+/* Hero section padding */
+.hero {
+  display: grid;
+  grid-template-columns: 1.5fr 1fr;
+  gap: 4rem;
+  align-items: center;
+  min-height: 85vh;
+  padding-top: 2rem; /* approximate navbar height */
+}
+
+/* Optional: add smoother mobile resizing */
+@media (max-width: 480px) {
+  .hero {
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    padding-top: 120px; /* taller navbar on very small screens */
+  }
 }
