@@ -1,7 +1,10 @@
 
+const repoName = '/portfolio'; 
+
 let basePath = '';
-if (window.location.pathname.split('/').length > 2) {
-  basePath = '../';
+const pathParts = window.location.pathname.split('/');
+if (pathParts.includes(repoName.replace('/', '')) && pathParts.length > 2) {
+  basePath = '../'; 
 }
 
 fetch(`${basePath}navbar.html`)
@@ -19,7 +22,6 @@ fetch(`${basePath}navbar.html`)
 
     const hamburger = document.getElementById('hamburger');
     const navRight = document.getElementById('nav-right');
-
     if (hamburger && navRight) {
       hamburger.addEventListener('click', () => {
         navRight.classList.toggle('active');
@@ -28,13 +30,11 @@ fetch(`${basePath}navbar.html`)
 
     const hero = document.querySelector('.hero');
     const navbar = document.getElementById('navbar');
-
     function adjustHeroPadding() {
       if (hero && navbar) {
         hero.style.paddingTop = navbar.offsetHeight + 'px';
       }
     }
-
     window.addEventListener('resize', adjustHeroPadding);
     window.addEventListener('load', adjustHeroPadding);
     adjustHeroPadding();
