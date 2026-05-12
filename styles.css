@@ -41,10 +41,7 @@ header {
   border-bottom: 1px solid rgba(255, 255, 255, 0.05);
   z-index: 9999;
 }
-.logo {
-  font-size: 1.4rem;
-  font-weight: 800;
-}
+
 .nav-links {
   display: flex;
   gap: 2rem;
@@ -84,8 +81,9 @@ header {
 }
 .hero-buttons {
   display: flex;
-  gap: 1rem;
+  gap: 0.4rem;
   margin-top: 2rem;
+  margin-bottom: 0rem;
 }
 .btn {
   padding: 1rem 1.5rem;
@@ -618,4 +616,17 @@ footer {
   border: 1px solid rgba(255, 255, 255, 0.05);
   color: #94a3b8;
   font-size: 0.92rem;
+}
+.logo a {
+  text-decoration: none;
+  color: white;
+  font-weight: 800;
+  transition: 0.3s ease;
+}
+.logo a:hover {
+  opacity: 0.9;
+}
+.glass-card a {
+  text-decoration: none;
+  color: white;
 }

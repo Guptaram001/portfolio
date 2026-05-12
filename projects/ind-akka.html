@@ -37,75 +37,90 @@
     <section class="section inner-page">
         <a href="../index.html" class="btn secondary"> ← Back Home </a>
         <br /><br />
-        <h1>INDs Discovery Using Akka</h1>
+        <h1>RAG System for German Historical Speech</h1>
         <div class="hero-buttons">
-            <a href="https://github.com/afaan123/Big_data_systems" class="btn primary">
-                Github Repository
+            <a href="../pdfjs/web/viewer.html?file=../../assets/pdfs/speech-rag.pdf" class="btn primary">
+                View Project Report
             </a>
             <a class="btn secondary disabled-btn">
                 <i class="fa-solid fa-lock"></i>
-                Unavailable Project Report
+                Private Research Repository
             </a>
         </div>
         <div class="glass-card">
             <p>
-                INDs Finder Using Akka is a distributed data profiling system
-                designed to compute Inclusion Dependencies (INDs) across large scale datasets
-                using the Akka actor framework. The project focuses on scalable
-                distributed processing, asynchronous task scheduling,
-                and efficient dependency discovery for high volume attribute sets.
+                RAG System for German Historical Speech, a project under <b>
+                    <a
+                        href="https://www.uni-marburg.de/en/fb12/research-groups/distsys/about-us/people/personal-pages/markus-muhling">
+                        Dr. Markus Mühling</a>,
+                    <a href="https://www.uni-marburg.de/en/fb12/research-groups/distsys">
+                        Distributed Systems & Intelligent Computing Group </a></b>, is a Retrieval Augmented Generation
+                (RAG)
+                application designed to retrieve relevant historical speech transcripts
+                and generate context aware responses using Large Language Models.
+                The system combines semantic retrieval techniques with vector databases
+                and language models to enable efficient exploration and understanding
+                of historical speech archives.
             </p>
             <br />
             <h3>Responsibilities</h3>
             <div class="responsibility-list">
                 <div class="responsibility-item">
-                    <i data-lucide="network"></i>
+                    <i data-lucide="database"></i>
                     <span>
-                        Designed and implemented a distributed system
-                        for computing Inclusion Dependencies (INDs)
-                        across multiple datasets using Akka.
+                        Developed a RAG pipeline for retrieving relevant historical speech transcripts
+                        and generating context aware responses.
                     </span>
                 </div>
                 <div class="responsibility-item">
-                    <i data-lucide="cpu"></i>
+                    <i data-lucide="file-search"></i>
                     <span>
-                        Developed actor based workflows using the Akka Actor Model
-                        to enable concurrent and asynchronous task execution. Tasks shared to Worker actors once
-                        they join the Master actor based on pull propagation.
+                        Processed, cleaned, and structured transcript datasets
+                        for efficient semantic retrieval workflows.
+                    </span>
+                </div>
+                <div class="responsibility-item">
+                    <i data-lucide="brain-circuit"></i>
+                    <span>
+                        Built embedding based vector stores and integrated retrieval results
+                        with Large Language Models (LLMs).
                     </span>
                 </div>
                 <div class="responsibility-item">
                     <i data-lucide="workflow"></i>
                     <span>
-                        Optimized scalability and performance through
-                        partitioning strategies - Consistent Hash Ring, Naive approaches like sharing columns failed
-                        with OOM errors.
+                        Designed evaluation pipelines to measure retrieval precision,
+                        semantic relevance, and response quality.
                     </span>
                 </div>
                 <div class="responsibility-item">
-                    <i data-lucide="gauge"></i>
+                    <i data-lucide="search-check"></i>
                     <span>
-                        Worked on improving execution efficiency,
-                        concurrency handling, and distributed coordination.
+                        Worked on information retrieval optimization
+                        and semantic search strategies for improved query performance.
                     </span>
                 </div>
             </div>
             <br />
             <h3>Technologies & Domains</h3>
             <div class="interest-tags">
-                <span>Akka</span>
-                <span>Actor Model</span>
-                <span>Distributed Systems</span>
-                <span>Concurrency</span>
-                <span>Asynchronous Processing</span>
-                <span>IND Detection</span>
-                <span>Data Profiling</span>
-                <span>Scalable Computing</span>
-                <span>Parallel Processing</span>
-                <span>Master Slave Architecture</span>
+                <span>Python</span>
+                <span>Elasticsearch</span>
+                <span>RAG Systems</span>
+                <span>Vector Databases</span>
+                <span>Arctic-Embed.2.0</span>
+                <span>Semantic Splitting</span>
+                <span>Recursive Text Splitting</span>
+                <span>Langgraph</span>
+                <span>Embedding Models</span>
+                <span>Natural Language Processing</span>
+                <span>Agentic RAG</span>
             </div>
         </div>
-
+        <div class="repo-note">
+            <i data-lucide="info"></i>
+            Source code are private due to NDA.
+        </div>
     </section>
     <script>
         lucide.createIcons();
