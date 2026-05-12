@@ -739,3 +739,38 @@ footer {
 
   flex-shrink: 0;
 }
+
+.experience-link {
+  display: inline-flex;
+  align-items: center;
+
+  gap: 0.5rem;
+
+  margin-top: 1.5rem;
+
+  color: #06b6d4;
+
+  text-decoration: none;
+
+  font-weight: 600;
+
+  transition: 0.3s ease;
+}
+
+.experience-link:hover {
+  transform: translateX(5px);
+}
+
+.inner-page {
+  padding-top: 2rem;
+}
+
+.responsibility-item i {
+  font-size: 1rem;
+
+  color: #06b6d4;
+
+  margin-top: 3px;
+
+  width: 18px;
+}
