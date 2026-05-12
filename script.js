@@ -5,6 +5,9 @@ let basePath = '';
 if (window.location.pathname.includes('/projects/')) {
   basePath = '../';
 }
+if (window.location.pathname.includes('/experience/')) {
+  basePath = '../';
+}
 
 const repoName = '/portfolio'; 
 
