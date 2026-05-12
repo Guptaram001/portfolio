@@ -1,6 +1,4 @@
-// script.js
 
-// Automatically determine correct path to navbar.html
 let basePath = '';
 
 // Check if current page is in a subfolder (like projects/)
@@ -8,8 +6,7 @@ if (window.location.pathname.includes('/projects/')) {
   basePath = '../';
 }
 
-// GitHub Pages repo name
-const repoName = '/<your-repo-name>'; // replace <your-repo-name> with your repo
+const repoName = '/portfolio'; 
 
 // Fetch navbar
 fetch(`${basePath}navbar.html`)
