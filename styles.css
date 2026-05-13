@@ -689,3 +689,39 @@ footer {
     padding-top: 120px; /* taller navbar on very small screens */
   }
 }
+
+.contribution-legend {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  margin-top: 10px;
+  font-size: 0.85rem;
+  color: #aaa;
+}
+
+.box {
+  width: 14px;
+  height: 14px;
+  border-radius: 3px;
+}
+
+.level-0 {
+  background: #161b22;
+}
+
+.level-1 {
+  background: #2d1155;
+}
+
+.level-2 {
+  background: #5b21b6;
+}
+
+.level-3 {
+  background: #a855f7;
+}
+
+.level-4 {
+  background: #e9a8ff;
+}
