@@ -725,3 +725,160 @@ footer {
 .level-4 {
   background: #e9a8ff;
 }
+/* TIMELINE */
+
+.timeline {
+  position: relative;
+  margin-top: 4rem;
+  padding-left: 40px;
+}
+
+/* Vertical Line */
+
+.timeline::before {
+  content: "";
+  position: absolute;
+
+  left: 11px;
+  top: 0;
+
+  width: 2px;
+  height: 100%;
+
+  background: linear-gradient(to bottom, #a855f7, rgba(168, 85, 247, 0.08));
+}
+
+/* ITEM */
+
+.timeline-item {
+  position: relative;
+  margin-bottom: 3rem;
+}
+
+/* GLOW DOT */
+
+.timeline-dot {
+  position: absolute;
+
+  left: -35px;
+  top: 24px;
+
+  width: 16px;
+  height: 16px;
+
+  border-radius: 50%;
+
+  background: #a855f7;
+
+  box-shadow:
+    0 0 0 6px rgba(168, 85, 247, 0.12),
+    0 0 20px rgba(168, 85, 247, 0.6);
+}
+
+/* CARD */
+
+.timeline-card {
+  transition: 0.35s ease;
+}
+
+.timeline-card:hover {
+  transform: translateY(-6px);
+  border-color: rgba(168, 85, 247, 0.3);
+}
+
+/* HEADER */
+
+.timeline-header {
+  display: flex;
+  justify-content: space-between;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+/* TITLES */
+
+.timeline-main h3 {
+  font-size: 1.2rem;
+  margin-bottom: 0.5rem;
+  line-height: 1.4;
+}
+
+.timeline-subtitle {
+  color: #9ca3af;
+  font-size: 0.95rem;
+}
+
+/* RIGHT META */
+
+.timeline-meta {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-end;
+  gap: 0.8rem;
+}
+
+/* DATE */
+
+.timeline-date {
+  color: #c084fc;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
+
+/* TAG */
+
+.timeline-tag {
+  background: rgba(168, 85, 247, 0.12);
+  border: 1px solid rgba(168, 85, 247, 0.2);
+
+  padding: 0.45rem 0.8rem;
+  border-radius: 999px;
+
+  font-size: 0.75rem;
+  color: #d8b4fe;
+
+  letter-spacing: 0.5px;
+}
+
+/* DESCRIPTION */
+
+.timeline-description {
+  margin-top: 1.4rem;
+  color: #d1d5db;
+  line-height: 1.8;
+}
+
+/* LINK */
+
+.experience-link {
+  margin-top: 1.5rem;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5rem;
+
+  color: #c084fc;
+  text-decoration: none;
+
+  transition: 0.3s ease;
+}
+
+.experience-link:hover {
+  gap: 0.8rem;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .timeline {
+    padding-left: 30px;
+  }
+
+  .timeline-header {
+    flex-direction: column;
+  }
+
+  .timeline-meta {
+    align-items: flex-start;
+  }
+}
